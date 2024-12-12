@@ -1,0 +1,41 @@
+Complete, detailed description of the ScherlocFitAnalyzer code functionality/pseudocode.
+See the code complete documentation for more details.
+
+Author: giopoggiali
+
+
+# File upload and setting
+
+The code start with the upload of a target Raman spectrum.
+
+After the user can select a target region where the band to be analysed is located and can define a name for the spectrum and a name for the band (these will be used to generate the report files). A plot with the selected range will show on MATLAB Live Editor.
+
+The user can also select if the code should save all the ancillary variables and if the baseline/background should be evaluated manually
+
+# Background evaluation
+
+If the user chose to evaluate the background manually the range should be identified in this section. Using the button "set bkg selection" a pop-up figure will appear to chose the point to evaluate the background.
+
+After the user will select the degree of the polynomial fit for the background and evaluate it with the button "Estimate bkg"
+
+# Noise evaluation
+
+Here the user can select a region where to evaluate the noise. The region of the spectrum should not present any bands. Using the button "Estimate noise" the result for the standard deviation and the root mean squared deviation will appear and the user should select which one to use and push the button "Set noise selection"
+
+# Analysis procedure
+
+Before running the analysis the user should select or deselect two options:
+
+1) Parameter initialization help
+If select the script will try to fit one, two or three gaussian band on the spectrum and plot the result to help in the definition of the initial parameters.
+
+2) Strong boundary for peak position
+If select the script will force the fit to identify the peak close to the selection of the user (within a range of 20 cm-1)
+
+After the user will run the analysis a pop-up figure will ask the user to identify the initial position of the band peak. A second pop-up will ask for the band limits.
+
+Following the decision of the user on the MATLAB Command Window will show the following question "Wanna assign fit parameter manually? y/n: ". The user can chose if not select any initial specific parameter (the scrip will set gamma and sigma parameter at 20) or to pass user defined parameter.
+
+Following this decision the script will evaluate the fit data to model with search for minima and plot model state at each iteration.
+
+After the fit will be evaluated the output file will be saved in the current MATLAB folder.
