@@ -6,7 +6,7 @@ Author: giopoggiali
 
 # File upload and setting
 
-The code start with the upload of a target Raman spectrum.
+The code start with the upload from the computer of a target Raman spectrum.
 
 After the user can select a target region where the band to be analysed is located and can define a name for the spectrum and a name for the band (these will be used to generate the report files). A plot with the selected range will show on MATLAB Live Editor.
 
