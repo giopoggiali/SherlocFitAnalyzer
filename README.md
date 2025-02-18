@@ -71,3 +71,5 @@ Version 2.1 - evaluation of single band areas as output parameter, addition of d
 
 Version 2.2 - added the possibility of select and import any spectrum from the computer
 
+Version 3.0 - added the possibility to select the spectrum from the computer folder and the print of error in the final report
+
